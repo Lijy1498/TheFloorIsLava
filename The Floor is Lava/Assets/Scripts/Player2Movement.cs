@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainCharacterMovementScript : MonoBehaviour 
-{
+public class Player2Movement : MonoBehaviour {
+
 	public float maxSpeed = 10f;
 	public float jumpForce = 900f;
 
@@ -29,7 +29,7 @@ public class MainCharacterMovementScript : MonoBehaviour
 			Application.LoadLevel(0);
 		}
 
-		float move = Input.GetAxis ("Horizontal");
+		float move = Input.GetAxis ("Horizontal2");
 
 		rigid2D.velocity = new Vector2 (move * maxSpeed, rigid2D.velocity.y);
 	}
@@ -37,7 +37,7 @@ public class MainCharacterMovementScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (grounded == true && Input.GetKeyDown (KeyCode.UpArrow))
+		if (grounded == true && Input.GetKeyDown (KeyCode.W))
 		{
 			rigid2D.AddForce (new Vector2 (0, jumpForce));
 		}

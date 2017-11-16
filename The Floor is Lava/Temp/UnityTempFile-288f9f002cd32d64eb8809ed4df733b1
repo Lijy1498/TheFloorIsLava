@@ -85,5 +85,6 @@ Assets/Scripts/BGLooper.cs
 Assets/Scripts/CameraMovement.cs
 Assets/Scripts/LavaMovement.cs
 Assets/Scripts/MainCharacterMovementScript.cs
+Assets/Scripts/Player2Movement.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

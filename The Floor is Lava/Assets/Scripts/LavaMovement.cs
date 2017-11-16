@@ -23,7 +23,7 @@ public class LavaMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	
 		if (MainCamera != null) {
 			Vector3 pos = transform.position;

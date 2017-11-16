@@ -18,7 +18,7 @@ public class BGLooper : MonoBehaviour {
 		//Debug.Log ("Triggered: " + collider.name);
 		if (collider.tag == "Box") {
 			DestroyObject (collider.gameObject);
-			Debug.Log ("Triggered: " + collider.name);
+			//Debug.Log ("Triggered: " + collider.name);
 		}
 			float heightOfBGObject = ((BoxCollider2D)collider).size.y;
 

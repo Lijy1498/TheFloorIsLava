@@ -4,8 +4,8 @@
     <Files>
       <File FileName="Assets\Scripts\MainCharacterMovementScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LavaMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BGLooper.cs" Line="11" Column="1" />
+      <File FileName="Assets\Scripts\LavaMovement.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scripts\BGLooper.cs" Line="27" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
