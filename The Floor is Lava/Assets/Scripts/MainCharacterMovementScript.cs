@@ -41,5 +41,9 @@ public class MainCharacterMovementScript : MonoBehaviour
 		{
 			rigid2D.AddForce (new Vector2 (0, jumpForce));
 		}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit();
+		}
 	}
 }

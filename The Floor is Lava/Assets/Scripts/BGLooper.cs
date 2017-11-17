@@ -3,7 +3,9 @@ using System.Collections;
 
 public class BGLooper : MonoBehaviour {
 
-	int numBGPanels = 3;
+	public float levelNum = 2;
+
+	int numBGPanels = 4;
 
 	void Start (){
 		GameObject box_go = GameObject.FindGameObjectWithTag ("Box");
@@ -16,10 +18,10 @@ public class BGLooper : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		//Debug.Log ("Triggered: " + collider.name);
-		if (collider.tag == "Box") {
-			DestroyObject (collider.gameObject);
+		//if (collider.tag == "Box") {
+			//DestroyObject (collider.gameObject);
 			//Debug.Log ("Triggered: " + collider.name);
-		}
+		//}
 			float heightOfBGObject = ((BoxCollider2D)collider).size.y;
 
 			Vector3 pos = collider.transform.position;
@@ -27,6 +29,14 @@ public class BGLooper : MonoBehaviour {
 		pos.y += heightOfBGObject * numBGPanels - 0.15f;
 
 			collider.transform.position = pos;
+
+		levelNum += 1;
+		Debug.Log ("Level: " + levelNum);
+
+		if (levelNum == 5) {
+			GetComponentInParent<CameraMovement>().scrollSpeed += 0.005f;;
+			levelNum = 0;
+		}
 	}
 
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Saves/Moving Screen.unity
+- path: Assets/Saves/The Floor Is Lava V.1.unity
   isLoaded: 1
   isActive: 1
